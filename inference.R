@@ -91,9 +91,9 @@ corrplot(corr_vals,
 
 dev.off()
 
-# correlation inference (Pearson)
-cor.test(corr_set$Median_Income, corr_set$Lung_CA_Incidence, method = "pearson")
-cor.test(corr_set$Median_Income, corr_set$COVID_Case_Fatality_Ratio, method = "pearson")
+# correlation inference
+cor.test(corr_set$Median_Income, corr_set$Lung_CA_Incidence)
+cor.test(corr_set$Median_Income, corr_set$COVID_Case_Fatality_Ratio)
 
 #####SCATTERS#####
 income_labels <- seq(40, 100, by = 20) %>% as.character
